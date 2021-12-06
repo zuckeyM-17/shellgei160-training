@@ -70,3 +70,8 @@ for(key in array)
 * コマンドを指定されなかったときはechoを実行する
   * echo のオプションを渡してしまうと、実行結果が意図しないものになるので注意
   * 即効性を買って利用する
+
+### bash によるメタプログラミング
+
+* shellscript と shebang
+* chmod +x
