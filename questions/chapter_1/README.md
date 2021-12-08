@@ -75,3 +75,12 @@ for(key in array)
 
 * shellscript と shebang
 * chmod +x
+
+### ファイルを操作する
+
+* 特定の拡張子を持つ文字列を抜き出す
+  * . はメタ文字なのでエスケープする
+  * sed -n 自動的に出力しない /正規表現/p で 正規表現にマッチした行だけを出力
+  * 複雑になれば、grep 以外に awk とかも知っておくべき
+* image magikでjpgをpngに変換する
+  * 
