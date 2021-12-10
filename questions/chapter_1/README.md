@@ -82,5 +82,16 @@ for(key in array)
   * . はメタ文字なのでエスケープする
   * sed -n 自動的に出力しない /正規表現/p で 正規表現にマッチした行だけを出力
   * 複雑になれば、grep 以外に awk とかも知っておくべき
-* image magikでjpgをpngに変換する
-  * 
+* ImageMagickでjpgをpngに変換する
+  * time コマンドで処理時間を計測
+  * xargs で -P オプションを使うとコマンドを並列実行する
+  * nproc 利用可能なCPUの数
+  * $(コマンド) => コマンド時間
+  * GNU parallel （別途インストールが必要）
+  * mogrify （ImageMagick に入っているコマンド）
+* ファイル名の一括置換
+  * rename コマンド
+  * ls -U ソートを省略
+  * s/^/0000/ 先頭に 0を4つつける
+  * grep -v マッチしなかったものを出力する
+  * awk sprintf フォーマットした文字列を返す関数
