@@ -95,3 +95,28 @@ for(key in array)
   * s/^/0000/ 先頭に 0を4つつける
   * grep -v マッチしなかったものを出力する
   * awk sprintf フォーマットした文字列を返す関数
+  * seq -w 0埋めする
+* 特定ファイルの削除
+  * grep -l ファイル名のみを表示
+  * grep -R ファイルの中を検索の対象にして再帰的に読み込み
+  * grep の並列化
+    * xargs
+    * ラインバッファ を気をつける必要がある
+  * ripgrep という grep の代替
+* awk と sed になれる
+  * awk 列を$1,$2で使い分けることができる
+  * printf 改行しない、print 改行する
+  * tac 出力をひっくり返す
+  * NR awk で行番号を取得
+  * printf `%*s` *（数字）分になるように左に余白を入れる
+  * tr -d 削除
+  * sed :a ラベル付け, ta ラベルa に戻る, p print, d 残った文字列を削除
+
+```
+seq SYNOPSIS
+     seq [-w] [-f format] [-s string] [-t string] [first [incr]] last
+
+DESCRIPTION
+     The seq utility prints a sequence of numbers, one per line (default), from first (default 1), to near last as
+     possible, in increments of incr (default 1).  When first is larger than last the default incr is -1.
+```
