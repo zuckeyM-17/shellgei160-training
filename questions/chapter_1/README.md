@@ -120,3 +120,12 @@ DESCRIPTION
      The seq utility prints a sequence of numbers, one per line (default), from first (default 1), to near last as
      possible, in increments of incr (default 1).  When first is larger than last the default incr is -1.
 ```
+
+* ~ 演算子 => 正規表現と比較
+* `cat ./sshellgei160/qdata/7/kakeibo.txt| awk '{tax = ($2~/^\*/)?1.08:1.1;print $0,tax}' | awk '{print int($3*$4)}' | awk '{a+=$1}END{print a}'`
+* awk -F 列の区切り文字を空白やタブ空変更するもの
+* NF number of fields
+* awk でできるものを sed と grep -o でやってみる
+* date 
+  * -f- 入力から時刻を読み込む
+  * -f ファイルから時刻を読み込む
