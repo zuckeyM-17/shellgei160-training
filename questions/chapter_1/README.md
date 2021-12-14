@@ -126,6 +126,6 @@ DESCRIPTION
 * awk -F 列の区切り文字を空白やタブ空変更するもの
 * NF number of fields
 * awk でできるものを sed と grep -o でやってみる
-* date 
+* date
   * -f- 入力から時刻を読み込む
   * -f ファイルから時刻を読み込む
