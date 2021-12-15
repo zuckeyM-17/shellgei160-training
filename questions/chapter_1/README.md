@@ -129,3 +129,7 @@ DESCRIPTION
 * date
   * -f- 入力から時刻を読み込む
   * -f ファイルから時刻を読み込む
+
+* pandoc
+  * markdown の形式を変換
+* 
